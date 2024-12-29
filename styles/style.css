@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: lato;
+}
+
+.main_heading {
+  margin: 80px 0 70px;
+  text-align: center;
+}
+
+.text_box_holder {
+  text-align: center;
+}
+
+#text_box {
+  margin-left: 0;
+  width: 720px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#text_box:focus {
+  box-shadow: 0px 0px 5px 0px blue;
+  outline: none;
+}
+
+.circles_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 318px;
+}
+
+.color_circle {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  margin-right: 6px;
+  border: 0.5px solid black;
+}
+
+.help_buttons {
+  display: flex;
+  width: max-content;
+}
+
+.help_buttons > * {
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.add_button:hover > .add_button_icon {
+  fill: green;
+  stroke: white;
+}
+.remove_button:hover > .remove_button_icon {
+  fill: red;
+  stroke: white;
+}
+
+.note_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  text-align: center;
+  margin: 20px 300px 0;
+}
+
+.note_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 90px;
+  border: 0.5px solid black;
+  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+[class*="u-color-"] {
+  color: white;
+}
+
+.u-color-white {
+  background-color: white;
+  color: black;
+}
+
+.u-color-orange {
+  background-color: orangered;
+}
+
+.u-color-yellow {
+  background-color: yellow;
+}
+
+.u-color-lightgreen {
+  background-color: lightgreen;
+}
+
+.u-color-darkgreen {
+  background-color: darkgreen;
+}
+
+.u-color-lightblue {
+  background-color: lightblue;
+}
+
+.u-color-midblue {
+  background-color: blue;
+}
+
+.u-color-darkblue {
+  background-color: darkblue;
+}
+
+.u-color-purple {
+  background-color: purple;
+}
+
+.u-color-pink {
+  background-color: pink;
+}
